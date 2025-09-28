@@ -1,13 +1,13 @@
-# 🏥 智慧药盒控制系统 (Smart Medicine Box)
+# 🔌 HarmonyOS TCP 通信应用
 
 <div align="center">
 
 ![HarmonyOS](https://img.shields.io/badge/HarmonyOS-4.0+-blue.svg)
 ![ArkTS](https://img.shields.io/badge/ArkTS-TypeScript-green.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
 
-一款基于HarmonyOS开发的智能医疗辅助应用，提供智能化的药物管理解决方案
+一款基于HarmonyOS开发的TCP网络通信应用，支持多种协议和设备控制功能
 
 [功能特性](#-功能特性) • [快速开始](#-快速开始) • [使用说明](#-使用说明) • [技术架构](#-技术架构) • [贡献指南](#-贡献指南)
 
@@ -15,7 +15,7 @@
 
 ## 📱 项目简介
 
-智慧药盒控制系统是一款专业的嵌入式设备调试和控制应用，通过TCP网络协议与智能药盒硬件设备进行通信，实现远程控制、环境监测、定时提醒等功能。应用采用现代化的液态玻璃UI设计，为用户提供优雅的交互体验。
+HarmonyOS TCP 通信应用是一款专业的网络通信和设备控制应用，支持TCP、UDP、HTTP等多种网络协议，可与各种硬件设备进行通信。应用具备实时数据监控、设备控制、定时提醒等功能，采用现代化的液态玻璃UI设计，为用户提供优雅的交互体验。
 
 ## ✨ 功能特性
 
@@ -62,8 +62,8 @@
 
 1. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/smart-medicine-box.git
-   cd smart-medicine-box
+   git clone https://github.com/chendi126/harmonyOS-TCP.git
+   cd harmonyOS-TCP
    ```
 
 2. **导入项目**
@@ -127,16 +127,18 @@
 ### 项目结构
 
 ```
-smart-medicine-box/
+harmonyOS-TCP/
 ├── entry/src/main/ets/
 │   ├── pages/                 # 页面组件
 │   │   ├── Index.ets         # 主页面
 │   │   ├── ProtocolConfig.ets # 协议配置
 │   │   ├── DataTest.ets      # 数据测试
-│   │   └── DeviceMonitor.ets # 设备监控
+│   │   ├── DeviceMonitor.ets # 设备监控
+│   │   ├── onhalf.ets        # 半屏显示
+│   │   └── time.ets          # 时间设置
 │   ├── common/               # 公共组件
 │   │   ├── GlassStyles.ets   # 液态玻璃样式
-│   │   └── CircuitBackground.ets # 电路背景
+│   │   └── SafeAreaUtils.ets # 安全区域工具
 │   └── entryability/         # 应用入口
 ├── AppScope/                 # 应用配置
 └── resources/               # 资源文件
@@ -207,13 +209,12 @@ chore: 构建过程或辅助工具的变动
 
 ## 📄 许可证
 
-本项目采用MIT许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+本项目采用Apache License 2.0许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
 ## 📞 联系我们
 
-- **项目维护者**: [您的姓名]
-- **邮箱**: your.email@example.com
-- **项目主页**: https://github.com/yourusername/smart-medicine-box
+- **项目维护者**: chendi126
+- **项目主页**: https://github.com/chendi126/harmonyOS-TCP
 
 ## 🙏 致谢
 
