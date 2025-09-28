@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/time",
+    "pages/onhalf",
+    "pages/ProtocolConfig",
+    "pages/DataTest",
+    "pages/DeviceMonitor"
+  ]
+}

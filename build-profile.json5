@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "com.example.iot_debugger",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "E:/wulioadeshendoubuzhidaoshigeshawanyier_Some/智慧药盒材料/key/smartmachines_release.p12",
+          "storePassword": "0000001BBEEC866D7A7E0A916A4946639A00F55FDDF4B77C5223027D7DF4B3DE8EDDD8AC70C84BFBF8E2AD",
+          "keyAlias": "smartmachines_release",
+          "keyPassword": "0000001B88E4DD738FBDE27556E37396CC313A6C3A372C4480E05737A345D274362C86A9B05693E31ADE95",
+          "signAlg": "SHA256withECDSA",
+          "profile": "E:/wulioadeshendoubuzhidaoshigeshawanyier_Some/智慧药盒材料/key/smartmachinesRelease.p7b",
+          "certpath": "E:/wulioadeshendoubuzhidaoshigeshawanyier_Some/智慧药盒材料/key/智慧药盒.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "com.example.iot_debugger",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true
+          }
+        },
+        "targetSdkVersion": "6.0.0(20)"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

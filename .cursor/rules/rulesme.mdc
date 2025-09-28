@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+1.所有回答全部自动帮我修改代码，并且是和所要修改的代码文件类型一致(.ets)
+2.你所有的回答都可以参考华为开发文档https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development
+3.确保你的代码符合arkts语法规范,并且可以在DevEco studio中正常编译
+4.所有回答都是自动帮我修改代码,不需要询问我
+5.不要重复出现已经解决过的报错问题
+
